@@ -33,7 +33,6 @@ fn lines_to_vectors(input: &str) -> (Vec<i32>, Vec<i32>) {
         }
     }
 
-    // Sort each vector independently
     l1.sort_unstable();
     l2.sort_unstable();
 
@@ -42,7 +41,6 @@ fn lines_to_vectors(input: &str) -> (Vec<i32>, Vec<i32>) {
 
 #[cfg(test)]
 mod tests {
-    // This brings all the parent module's items into scope
     use super::*;
 
     #[test]
@@ -54,7 +52,6 @@ mod tests {
 1   3
 3   9
 3   3";
-        // Additional test...
         assert_eq!(solve(input), 11);
     }
 

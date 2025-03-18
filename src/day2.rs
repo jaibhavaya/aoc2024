@@ -53,7 +53,6 @@ fn parse_input(input: &str) -> Vec<Report> {
 
 #[cfg(test)]
 mod tests {
-    // This brings all the parent module's items into scope
     use super::*;
 
     #[test]
